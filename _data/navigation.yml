@@ -1,0 +1,27 @@
+- title: About
+  url: /about.html
+- title: People
+  url: /people.html
+  sublinks:
+    - title: Faculty & Postdocs
+      url: /people/faculty.html
+    - title: Students
+      url: /people/students.html
+    - title: separator
+    - title: Alumni
+      url: /people/alumni.html
+
+- title: Contact
+  url: /contact.html
+- title: Store
+  url: /store.html
+- title: Projects
+  url: /support.html
+  sublinks:
+    - title: FAQ
+      url: /faq.html
+    - title: Documentation
+      url: /documentation.html
+    - title: separator
+    - title: Customer Support
+      url: /customer-support.html
