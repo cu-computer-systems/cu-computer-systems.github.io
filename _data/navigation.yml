@@ -1,13 +1,12 @@
 - title: About
   url: /about.html
 - title: People
-  url: /people.html
+  url: /people/index.html
   sublinks:
     - title: Faculty & Postdocs
       url: /people/faculty.html
     - title: Students
       url: /people/students.html
-    - title: separator
     - title: Alumni
       url: /people/alumni.html
 
