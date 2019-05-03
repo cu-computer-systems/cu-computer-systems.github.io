@@ -3,19 +3,18 @@
 - title: People
   url: /people/index.html
   sublinks:
-    - title: Faculty & Postdocs
+    - title: Faculty
       url: /people/faculty.html
+    - title: Postdocs 
+      url: /people/postdocs.html
     - title: Students
       url: /people/students.html
     - title: Alumni
       url: /people/alumni.html
-
 - title: Contact
   url: /contact.html
-- title: Store
-  url: /store.html
 - title: Projects
-  url: /support.html
+  url: /projects.html
   sublinks:
     - title: FAQ
       url: /faq.html

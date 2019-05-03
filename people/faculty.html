@@ -4,78 +4,15 @@ permalink: /people/faculty
 ---
 <!-- Main Container -->
 
+
+{% assign gallery = site.faculty %}
+
 <div id="banners"></div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="blockquote-box blockquote-info animated wow fadeInLeft clearfix">
-        <div class="square pull-left">
-          <img src="../assets/img/faculty/grunwald.jpg" alt="Feature-img" height="80" width="100">
-        </div>
-        <h4>
-          Dirk Grunwald
-        </h4>
-        <p> Professor, Faculty Director </p>
-	<p> Computer Systems, Wireless, Storage </p>
-      </div>
-      <div class="blockquote-box blockquote-primary animated wow fadeInLeft clearfix">
-        <div class="square pull-left">
-          <img src="../assets/img/faculty/sangtae-face.png" alt="Feature-img" height="80" width="80">
-        </div>
-        <h4>
-          Sangtae Ha
-        </h4>
-        <p>
-          Software Developer , Technext
-        </p>
-      </div>
-      <div class="blockquote-box blockquote-success animated wow fadeInLeft clearfix">
-        <div class="square pull-left">
-          <img src="../assets/img/faculty/han.jpg" alt="Feature-img" height="80" width="100">
-        </div>
-        <h4>
-          Rick Han
-        </h4>
-        <p>
-          App Developer , Technext
-        </p>
-      </div>
-  </div>
-  <div class="col-md-6">
-    <div class="blockquote-box blockquote-danger animated wow fadeInRight clearfix">
-      <div class="square pull-left">
-        <img src="../assets/img/faculty/lv-2017.jpg" alt="Feature-img" height="80" width="100">
-      </div>
-      <h4>
-        Qin (Christine) Lv
-      </h4>
-      <p>
-        Android Developer , Technext
-      </p>
-    </div>
-    <div class="blockquote-box blockquote-warning animated wow fadeInRight clearfix">
-      <div class="square pull-left">
-        <img src="../assets/img/team/member2.png" alt="Feature-img" height="80" width="100">
-      </div>
-      <h4>
-        Chris Way
-      </h4>
-      <p>
-        iOS Developer , Technext
-      </p>
-    </div>
-    <div class="blockquote-box animated wow fadeInRight clearfix">
-      <div class="square pull-left">
-        <img src="../assets/img/team/member1.png" alt="Feature-img" height="80" width="100">
-      </div>
-      <h4>
-        Christopher
-      </h4>
-      <p>
-        Web Developer , Technext
-      </p>
-      </div>
+  <div class="container">
+    <div class="row">
+{% include rogues_gallery %}
     </div>
   </div>
 </div>
+
 <!--End Main Container -->

@@ -1,0 +1,49 @@
+{% assign gsz = gallery | size %}
+{% assign halfsz = gsz | plus: 1 %}
+{% assign halfsz = halfsz | divided_by: 2 %}
+
+<div class="col-md-6">
+{% if gsz > 0 %}
+{% for i in (0..gsz) %}
+  {% assign item = gallery[i] %}
+
+  {% if i == halfsz %}
+   </div>
+   <div class="col-md-6">
+  {% endif %}
+
+  {% capture url %}{{ item.image_url }}{% endcapture %}
+  {% assign split_url = url | split: '.' %}
+
+  {% if item.image_url %}
+     {% capture headshot %}{{site.urlimg}}{{item.image_url}} {% endcapture %}
+  {% else %}
+     {% capture headshot %}/assets/img/team/member1.png{% endcapture %}
+  {% endif %}
+
+  {% if i < halfsz %}
+    <div class="blockquote-box blockquote-info animated wow fadeInLeft clearfix">
+      <div class="square pull-left">
+  {% else %}
+    <div class="blockquote-box blockquote-info animated wow fadeInRight clearfix">
+      <div class="square pull-right">
+  {% endif %}
+
+<img {% if item.caption %}data-caption="{{ item.caption }}"{% endif %}
+     src="{{ headshot }}"
+     height="80" width="80" alt="{{ item.caption }}">
+</div>
+
+{% if item.name %}
+<h4> {% if item.url %} <a href="{{item.url}}"> {{item.name | upcase}} </a>
+     {% else %} {{item.name}}
+     {% endif %} </h4>
+{% if item.area %} <p> {{ item.area }} {% endif %}
+{%endif%}
+</div>
+
+{% assign i = i | plus:1 %}
+{% endfor %}
+{% endif %}
+</div>
+

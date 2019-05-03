@@ -48,3 +48,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections_dir: collections                                                             
+collections:                                                                             
+  students:
+    output: true
+  posts:
+    output: true
+  faculty:
+    output: true
+  postdocs:
+    output: true
