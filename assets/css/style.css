@@ -152,8 +152,8 @@ body {
 }
 
 a {
-    color: #55CBD2;
-    text-decoration: none;
+    color: #CFB87C;
+    text-decoration: underline;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
@@ -259,7 +259,7 @@ address {
   padding-top: 0px;
 }
 .side-left{
-  background:#528C7C;
+  background:#A2A4A3;
   box-shadow: 3px grey;
   color: white;
   padding: 30px;
@@ -525,7 +525,8 @@ footer h3 {
 }
 
 #social-icons .btn-group {
-    color: #55CBD2;
+    color: #CFB87C; /* gold */
+    color: #FFFFFF; /* gold */
     margin-right: 15px;
 }
 #social-icons .btn-group:hover {

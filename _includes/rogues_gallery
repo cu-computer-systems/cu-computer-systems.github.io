@@ -21,6 +21,12 @@
      {% capture headshot %}/assets/img/team/member1.png{% endcapture %}
   {% endif %}
 
+  {% if item.permalink %}
+     {% capture homepage %}{{site.urlimg}}{{item.permalink}} {% endcapture %}
+  {% else %}
+     {% capture homepage %}{{site.urlimg}}{{item.url}} {% endcapture %}
+  {% endif %}
+
   {% if i < halfsz %}
     <div class="blockquote-box blockquote-info animated wow fadeInLeft clearfix">
       <div class="square pull-left">
@@ -35,7 +41,7 @@
 </div>
 
 {% if item.name %}
-<h4> {% if item.url %} <a href="{{item.url}}"> {{item.name | upcase}} </a>
+<h4> {% if item.url %} <a href="{{homepage}}"> {{item.name | upcase}} </a>
      {% else %} {{item.name}}
      {% endif %} </h4>
 {% if item.area %} <p> {{ item.area }} {% endif %}
