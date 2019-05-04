@@ -1,5 +1,6 @@
 {% assign gsz = gallery | size %}
-{% assign halfsz = gsz | plus: 1 %}
+{% assign gsz = gsz | minus:1  %}
+{% assign halfsz = gsz | plus: 2 %}
 {% assign halfsz = halfsz | divided_by: 2 %}
 
 <div class="col-md-6">
@@ -22,9 +23,9 @@
   {% endif %}
 
   {% if item.permalink %}
-     {% capture homepage %}{{site.urlimg}}{{item.permalink}} {% endcapture %}
+     {% capture homepage %}{{item.permalink}} {% endcapture %}
   {% else %}
-     {% capture homepage %}{{site.urlimg}}{{item.url}} {% endcapture %}
+     {% capture homepage %}{{item.url}} {% endcapture %}
   {% endif %}
 
   {% if i < halfsz %}
@@ -41,7 +42,7 @@
 </div>
 
 {% if item.name %}
-<h4> {% if item.url %} <a href="{{homepage}}"> {{item.name | upcase}} </a>
+<h4> {% if homepage %} <a href="{{homepage}}"> {{item.name | upcase}} </a>
      {% else %} {{item.name}}
      {% endif %} </h4>
 {% if item.area %} <p> {{ item.area }} {% endif %}
