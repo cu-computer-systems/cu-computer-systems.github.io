@@ -3,14 +3,15 @@
 {% assign halfsz = gsz | plus: 2 %}
 {% assign halfsz = halfsz | divided_by: 2 %}
 
-<div class="col-md-6">
+<div class="col-md-2 col-lg-2"> </div>
+<div class="col-md-4 col-lg-4">
 {% if gsz > 0 %}
 {% for i in (0..gsz) %}
   {% assign item = gallery[i] %}
 
   {% if i == halfsz %}
    </div>
-   <div class="col-md-6">
+   <div class="col-md-4 col-lg-4">
   {% endif %}
 
   {% capture url %}{{ item.image_url }}{% endcapture %}
@@ -53,4 +54,5 @@
 {% endfor %}
 {% endif %}
 </div>
+<div class="col-md-2 col-lg-2"> </div>
 
