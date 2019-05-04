@@ -1,0 +1,70 @@
+  <body>
+     <div class="container">
+      <div class="row">
+
+	<div class="col-sm-1 col-md-1"> </div>
+
+
+	  <div class="side-left col-sm-3 col-md-3">
+
+	    <div class="navbar-nav">
+
+	      <div class="center">
+		<h4> {{peopletype}} </h4> <hr>
+
+		<img src="{{page.image_url}}" width="200">
+	      </div>
+	      <p>
+		<div class="lead center" >
+		  {{page.area}}
+		</div>
+
+	    <div>
+	      <hr>
+	      {% if page.office %}
+	      Office: <div class="box-shadow"> {{page.office}} </div>
+	      <br>
+	      {% endif %}
+	      {% if page.phone %}
+	      Phone: {{page.phone}}
+	      {% endif %}
+	      <br>
+	    </div>
+
+
+        <div id="social-icons">
+          {% if page.googleplus_link %}
+            <a href="{{ page.googleplus_link }}" class="btn-group google-plus">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          {% endif %}
+
+          {% if page.linkedin_link %}
+            <a href="{{ page.linkedin_link }}" class="btn-group linkedin">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          {% endif %}
+
+          {% if page.facebook_link %}
+            <a href="{{ page.twitter_link }}" class="btn-group twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          {% endif %}
+
+          {% if page.facebook_link %}
+            <a href="{{ page.facebook_link }}" class="btn-group facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          {% endif %}
+        </div>
+
+	    </div>
+	  </div>
+
+	  <div class="col-md-6">
+	  <h1 class="title-text"> {{page.name}} </h1> <hr>
+      {{ content }}
+	</div>
+      </div>
+    </div>
+  </body>
