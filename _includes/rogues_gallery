@@ -27,8 +27,8 @@ Set variable 'gallery' to the content array
      {% capture headshot %}/assets/img/team/member1.png{% endcapture %}
   {% endif %}
 
-  {% if item.permalink %}
-     {% capture homepage %}{{item.permalink}} {% endcapture %}
+  {% if item.targeturl %}
+     {% capture homepage %}{{item.targeturl}} {% endcapture %}
   {% else %}
      {% capture homepage %}{{item.url}} {% endcapture %}
   {% endif %}

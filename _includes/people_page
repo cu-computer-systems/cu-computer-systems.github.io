@@ -59,6 +59,11 @@
         </div>
 
 	    </div>
+
+      <div class="headlines-box left">
+	{% include toc.html html=content %}
+      </div>
+
 	  </div>
 
 	  <div class="col-md-6">
