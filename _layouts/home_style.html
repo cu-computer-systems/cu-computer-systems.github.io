@@ -5,40 +5,46 @@
   {% include header.html %}
   {% include script.html %}
 
+  {% assign ordered_pages = site.headlines | sort:"order_number" | reverse %}
+  {% assign num_pages = ordered_pages | size | minus: 1%}
+
   <body>
     <!-- Begin #carousel-section -->
     <section id="carousel-section" class="section-global-wrapper"> 
-        <div class="container-fluid-kamn">
-            <div class="row center">
+        <div class="col-sm-2 col-md-2 col-xs-1"> </div>
+        <div class="container col-sm-8 col-md-8 col-lg-8" >
+          <div class="row center">
                 <div id="carousel-1" class="carousel slide" data-ride="carousel">
 
                     <!-- Indicators -->
                     <ol class="carousel-indicators visible-lg">
-                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-1" data-slide-to="1"></li>
+		      {% for i in (0..num_pages) %}
+			  {% if i == 0 %} 
+                      <li data-target="#carousel-1" data-slide-to="{{i}}" class="active" >
+			{% else %} 
+		      <li data-target="#carousel-1" data-slide-to="{{i}}" >
+			{% endif %}
+		      </li>
+		      {% endfor %}
                     </ol>
         
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <!-- Begin Slide 1 -->
-                        <div class="item active">
-                            <img src="../assets/img/slider/mountain-and-logo-short.png" height="400" alt="Image of first carousel">
+                      <!-- Begin Slide 1 -->
+		      {% for i in (0..num_pages) %}
+		      {% assign thispage = ordered_pages[i] %}
+		      {% if i == 0 %} <div class="item"> {% else %}<div class="item active">{% endif %}
+			<a href="{{thispage.targeturl}}">
+                          <img src="{{thispage.image_url}}" height="400" alt="{{thispage.image_alt}}">
+			  
                             <div class="carousel-caption">
-                                <h3 class="carousel-title hidden-xs">COMPUTER SYSTEMS</h3>
-                                <p class="carousel-body">Research Group</p>
+                                <h3 class="carousel-title hidden-xs">{{thispage.title}}</h3>
+                                <h4 class="carousel-body">{{thispage.caption}}</h4>
                             </div>
+			    </a>
                         </div>
-                        <!-- End Slide 1 -->
-
-                        <!-- Begin Slide 2 -->
-                        <div class="item">
-                            <img src="../assets/img/slider/lab-bench.png" height="400" alt="Image of second carousel">
-                            <div class="carousel-caption">
-                                <h3 class="carousel-title hidden-xs">NETWORK RESEARCH</h3>
-                                <p class="carousel-body">WIRED AND WIRELESS</p>
-                            </div>
-                        </div>
-                        <!-- End Slide 2 -->
+			{% endfor %}
+                        <!-- End Slide template -->
                     </div>
         
                     <!-- Controls -->
@@ -72,7 +78,7 @@
                     <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
                         <p class="services-icon"><span class="fas fa-network-wired fa-4x"></span></p>
                         <h4 class="services-title">Networking</h4>
-                        <p class="services-body">High performance and flexible networking</p>
+                        <p class="services-body">Datacenter and Widearea</p>
                         <p class="services-more"><a href="#">Find Out More</a></p>
                     </div>
                 </div>

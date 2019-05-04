@@ -1,3 +1,7 @@
+{% comment %}
+Set variable 'gallery' to the content array
+{% endcomment %}
+
 {% assign gsz = gallery | size %}
 {% assign gsz = gsz | minus:1  %}
 {% assign halfsz = gsz | plus: 2 %}

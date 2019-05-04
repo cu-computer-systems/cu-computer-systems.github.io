@@ -109,6 +109,9 @@ h3.col-xs-12{
 .center{
     text-align: center;
 }
+.left{
+    text-align: left;
+}
 .block-author{
     color: #D7002E;
 }
@@ -660,6 +663,16 @@ footer h3 {
     font-family: 'lato' ;
     font-style: normal;
 }
+
+/*
+* headlins left side
+*/
+.headlines-box ul {margin-left: -30px}
+.headlines-box ul li {list-style: square}
+.headlines-box a{color:#FFFFFF; text-decoration: underline}
+.headlines-box h4{color:#FFFFFF}
+
+
 
 /*
 * ==========================================================================
