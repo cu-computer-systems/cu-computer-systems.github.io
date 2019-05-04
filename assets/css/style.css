@@ -220,6 +220,13 @@ address {
   color: #ffffff;
   background-color: #1bbd9b;
 }
+
+.nav-logo {
+    margin-top: 30px;
+    padding: 5x 14px;
+    background-image:url("/assets/img/cropped-fpga.jpg");
+    color: #FFFFFF
+}
 /*
 * ==========================================================================
 * Navbar
