@@ -1,0 +1,15 @@
+{% comment %}
+Set variable 'folks_area' to the research area and 'folks_gallery' to the content array
+and 'folks_sep' to the separator.
+{% endcomment %}
+
+{% assign sep = "" %}
+
+{% for person in folks_gallery: %}
+   {% if person.area contains folks_area %}
+     {{sep}} <a href="{{person.url}}"> {{person.name}} </a>
+     {% assign sep = folks_sep %}
+   {% endif %}
+{% endfor %}
+  
+

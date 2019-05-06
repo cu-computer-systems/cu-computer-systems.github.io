@@ -1,3 +1,95 @@
 ---
-layout: home_style
+layout: default_style
 ---
+
+  {% assign ordered_pages = site.headlines | sort:"order_number" | reverse %}
+  {% assign num_pages = ordered_pages | size | minus: 1%}
+
+  <body>
+    <!-- Begin #carousel-section -->
+    <section id="carousel-section" class="section-global-wrapper"> 
+        <div class="col-sm-2 col-md-2 col-xs-1"> </div>
+        <div class="container col-sm-8 col-md-8 col-lg-8" >
+          <div class="row center">
+                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators visible-lg">
+		      {% for i in (0..num_pages) %}
+			  {% if i == 0 %} 
+                      <li data-target="#carousel-1" data-slide-to="{{i}}" class="active" >
+			{% else %} 
+		      <li data-target="#carousel-1" data-slide-to="{{i}}" >
+			{% endif %}
+		      </li>
+		      {% endfor %}
+                    </ol>
+        
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <!-- Begin Slide 1 -->
+		      {% for i in (0..num_pages) %}
+		      {% assign thispage = ordered_pages[i] %}
+		      {% if i == 0 %} <div class="item"> {% else %}<div class="item active">{% endif %}
+			<a href="{{thispage.targeturl}}">
+                          <img src="{{thispage.image_url}}" height="400" alt="{{thispage.image_alt}}">
+			  
+                          <div class="carousel-caption">
+                                <h3 class="carousel-title hidden-xs">{{thispage.title}}</h3>
+                                <h4 class="carousel-body">{{thispage.caption}}</h4>
+                            </div>
+			    </a>
+                        </div>
+			{% endfor %}
+                        <!-- End Slide template -->
+                    </div>
+        
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End #carousel-section -->
+
+    <section id="services" class="services-section section-global-wrapper">
+
+    <div class="headlines-header col-sm-6 col-md-6 col-lg-6">
+
+      <div class="lead"> <h2> Announcements </h2> </div>
+      {% assign ordered_pages = site.headlines | sort:"order_number" | reverse %}
+
+      {% for news in ordered_pages limit 5 %}
+      {% if news.order_number != 1000000 %}
+
+        <div class="headlines-item">
+        <h4> <a href="{{news.url}}"> {{ news.title }} </a> </h4> <p> {{news.lede}} </p>
+        </div>
+      {% endif %}
+      {% endfor %} 
+    </div>
+
+    <div class="headlines-header col-sm-6 col-md-6 col-lg-6">
+
+      <div class="lead"> <h2> Recent News </h2> </div>
+      {% assign ordered_pages = site.posts | sort:"order_number" | reverse %}
+
+      {% for news in ordered_pages limit 5 %}
+      {% if news.order_number != 1000000 %}
+
+        <div class="headlines-item">
+        <h4> <a href="{{news.url}}"> {{ news.title }} </a> </h4> <p> {{news.lede}} </p>
+        </div>
+      {% endif %}
+      {% endfor %} 
+    </div>
+
+
+    </section>
+
+  </body>

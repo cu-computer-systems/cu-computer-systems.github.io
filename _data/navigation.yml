@@ -2,6 +2,8 @@
   url: /index.html
 - title: About
   url: /about.html
+- title: Research Areas
+  url: /areas.html
 - title: People
   url: /people/index.html
   sublinks:

@@ -61,3 +61,5 @@ collections:
     output: true
   headlines:
     output: true
+  projects:
+    output: true

@@ -25,7 +25,7 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   font-variant: small-caps;
 }
 
- .main-content{
+.main-content{
     margin-top: 20px;
     padding-bottom: 50px;
     text-align: left;
@@ -89,9 +89,8 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     margin-top: 15px;
     border:1px solid #DDD;
     padding: 5px;
-  
-
  }
+
 .form-group{
     
     padding:20px;
@@ -162,6 +161,16 @@ a {
     -webkit-transition: all .3s;
     -ms-transition: all .3s;
 }
+
+.area-list {
+    padding-left: 10px;
+}
+.area-list-faculty {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+
 
 a:hover { color: #888; text-decoration: none; }
 
@@ -268,6 +277,7 @@ address {
   letter-spacing: 2px;
   padding-top: 0px;
 }
+
 .side-left{
   background:#A2A4A3;
   box-shadow: 3px grey;
@@ -275,6 +285,26 @@ address {
   padding: 30px;
   letter-spacing: .9px;
 }
+
+.headlines-left{
+  box-shadow: 3px grey;
+  padding: 30px;
+  letter-spacing: .9px;
+  text-align: center
+}
+
+.headlines-header{
+  box-shadow: 3px grey;
+  padding: 30px;
+  letter-spacing: .9px;
+  text-align: center
+}
+
+.headlines-item{
+  text-align: left
+}
+
+
 @media (min-width: 800px){ 
  
     .side-left{
