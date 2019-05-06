@@ -64,7 +64,7 @@ layout: default_style
       <div class="lead"> <h2> Group Highlights </h2> </div>
       {% assign ordered_pages = site.headlines | sort:"order_number" | reverse %}
 
-      {% for news in ordered_pages limit 5 %}
+      {% for news in ordered_pages limit: 5 %}
       {% if news.order_number != 1000000 %}
 
         <div class="headlines-item">
@@ -79,7 +79,7 @@ layout: default_style
       <div class="lead"> <h2> Recent News </h2> </div>
       {% assign ordered_pages = site.posts | sort:"order_number" | reverse %}
 
-      {% for news in ordered_pages limit 5 %}
+      {% for news in ordered_pages limit: 5 %}
       {% if news.order_number != 1000000 %}
 
         <div class="headlines-item">
