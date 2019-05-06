@@ -10,28 +10,27 @@
       <div class="row">
 	<div class="col-sm-1 col-md-1"> </div>
 
-    <div class="side-left col-sm-3 col-md-3">
+	<div class="side-left col-sm-3 col-md-3">
 
-      <div class="headlines-box">
-	<div class="center">
-      <span class="badge">{{ page.date | date: '%B %d, %Y' }}</span>
-	  <h4> {{page.title}} </h4> <hr/>
-	  <img src="{{page.image_url}}" width="200" />
+	  <div class="headlines-box">
+	    <div class="center">
+	      <span class="badge">{{ page.date | date: '%B %d, %Y' }}</span>
+	      <h4> {{page.title}} </h4> <hr/>
+	    </div>
+	  </div>
+
+	  <div class="headlines-box left">
+	    {% include toc.html html=content %}
+	  </div>
+	</div> 
+
+	<div class="col-md-6">
+          <img src="{{page.image_url}}" class="img-fluid rounded" width="100%" />
+	  <h1 class="title-text"> {{page.caption}} </h1> <hr>
+	  <div> 
+	    {{ content }}
+	  </div>
 	</div>
-      </div>
-
-      <div class="headlines-box left">
-	{% include toc.html html=content %}
-      </div>
-
-    </div>
-    
-    <div class="col-md-6">
-	<h1 class="title-text"> {{page.caption}} </h1> <hr>
-      <div> 
-	{{ content }}
-      </div>
-    </div>
       </div>
     </div>
   </body>
