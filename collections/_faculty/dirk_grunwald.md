@@ -4,7 +4,7 @@ name: Dirk Grunwald
 image_url: /assets/img/faculty/dirk-head.png
 office: ECCR 1b20,<br> Engineering Center
 phone: (303) 492-0452
-area: Wireless, Networks, Security, Storage
+area: Mobile, Networks, Security, Storage
 permalink: /people/faulty/dirk_grunwald
 linkedin_link: https://www.linkedin.com/in/dirk-grunwald-7735202
 output: true
