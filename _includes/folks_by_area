@@ -7,7 +7,13 @@ and 'folks_sep' to the separator.
 
 {% for person in folks_gallery: %}
    {% if person.area contains folks_area %}
-     {{sep}} <a href="{{person.url}}"> {{person.name}} </a>
+     {% if person.targeturl %}
+       {% capture homepage %}{{person.targeturl}} {% endcapture %}
+     {% else %}
+       {% capture homepage %}{{person.url}} {% endcapture %}
+     {% endif %}
+
+     {{sep}} <a href="{{homepage}}"> {{person.name}} </a>
      {% assign sep = folks_sep %}
    {% endif %}
 {% endfor %}
