@@ -1,6 +1,6 @@
 ---
 layout: headlines_layout
-title: THIS IS YOUR PRESIDENT SPEAKING
+title: Presidential Alerts Are Not Secure
 caption: Spoofing Presidental Alerts
 lede: Our research shows that it is possible for a physically-proximate attacker to spoof Wireless Emergency Alerts, including Presidential alerts, AMBER alerts, and other imminent threat alerts to cell phones within range.
 image_url: /assets/img/slider/lab-bench.png

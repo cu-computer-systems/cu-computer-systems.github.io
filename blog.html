@@ -8,14 +8,20 @@ published: true
 <div class="container">
   {% for post in site.posts %}
   <div class="blog-post">
+    <div class="row">
+    <div class="col-sm-8 col-md-8 col-lg-8 col-sx-1">
       <h1 class="blog-title">
-        <i class="fa fa-file-text"></i>
-        {{ post.title }}
+	<i class="fa fa-file-text"></i>
+	{{ post.title }}
       </h1>
-      <br>
-      <img src="assets/img/slider/{{ post.picture }}" alt="Feature-img" align="right" width="100%" class="blog-image">
-      <br>
-      <p>{{ post.description }}</p>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3 col-sx-1">
+      <img src="{{ post.image_url }}" alt="Feature-img" align="right" width="100%" class="blog-image">
+    </div>
+    <div class="col-sm-8 col-md-8 col-lg-8 col-sx-1">
+      <p>{{ post.content }}</p>
       <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>
       <div class="pull-right">
         {% if post.label_default %}
@@ -40,9 +46,11 @@ published: true
 
         {% if post.label_danger %}
           <span class="label label-danger">{{ post.label_danger }}</span>
-        {% endif %}
+          {% endif %}
+	  </div>
       </div>         
     </div>
+  </div>
     <hr>
   {% endfor %}
 </div>

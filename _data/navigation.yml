@@ -4,6 +4,8 @@
   url: /about.html
 - title: Research Areas
   url: /areas.html
+- title: News
+  url: /blog.html
 - title: People
   url: /people/index.html
   sublinks:
