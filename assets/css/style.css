@@ -254,6 +254,9 @@ address {
   padding-bottom: 15px;
   margin-bottom: 0;
 }
+.navbar a {
+    text-decoration: none;
+}
 /*
 * ==========================================================================
 * Navbar Nav Links
