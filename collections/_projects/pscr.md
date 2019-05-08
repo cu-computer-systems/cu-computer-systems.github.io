@@ -1,9 +1,10 @@
 ---
 layout: headlines_layout
-title: Public Safety Communications
+title: Resilient Communications
+caption: Ongoing work funded by Public Safety Communications Reseearch
 date: 12/1/2001
 permalink: /projects/pscr.html
 ---
 
 
-# Hi mom
+#Hi mom
