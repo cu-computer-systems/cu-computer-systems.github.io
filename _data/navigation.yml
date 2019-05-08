@@ -21,11 +21,3 @@
   url: /contact.html
 - title: Projects
   url: /projects.html
-  sublinks:
-    - title: FAQ
-      url: /faq.html
-    - title: Documentation
-      url: /documentation.html
-    - title: separator
-    - title: Customer Support
-      url: /customer-support.html
