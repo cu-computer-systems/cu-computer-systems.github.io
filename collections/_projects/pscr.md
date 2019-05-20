@@ -95,4 +95,4 @@ deployment of CASTLE into smart devices and evaluate it in a commercial LTE netw
 
 ## Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lLC4JC66umQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![pscr_video](https://img.youtube.com/vi/lLC4JC66umQ/0.jpg)](https://www.youtube.com/watch?v=lLC4JC66umQ)
