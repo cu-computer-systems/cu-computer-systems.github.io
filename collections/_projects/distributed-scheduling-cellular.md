@@ -6,9 +6,8 @@ date: 05/12/2019
 permalink: /projects/distributed-scheduling-cellular.html
 ---
 
-<!--
-add pic 4
--->
+
+<img src="/assets/img/project/distributed-scheduling-cellular/pic4_distributed_coordination.jpg" width="100%">
 
 
 ## Distributed Coordination for Massive Downloading
