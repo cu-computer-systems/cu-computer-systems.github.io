@@ -7,5 +7,5 @@ image_url: /assets/img/slider/lab-bench.png
 image_alt: LTE Software Radio
 targeturl: /project/pscr.html
 order_number: 2000000
-output: true
+output: false
 ---
