@@ -6,7 +6,7 @@ date: 05/12/2019
 permalink: /projects/securing-wea.html
 ---
 
-![image-title-here](/assets/img/project/securing-wea/pic2_securing_wea.jpg)
+![Securing WEA](/assets/img/project/securing-wea/pic2_securing_wea.jpg)
 
 ## Emergency Message Broadcaster and Securing LTE Emergency Alerts
 
