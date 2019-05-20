@@ -7,7 +7,7 @@ image_url: /assets/img/slider/lab-bench.png
 image_alt: LTE Software Radio
 targeturl: /headlines/cmas.html
 url: /headlines/cmas.html
-order_number: 1000
+order_number: 1
 output: true
 ---
 
