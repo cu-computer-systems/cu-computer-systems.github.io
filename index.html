@@ -65,7 +65,7 @@ layout: default_style
       {% assign ordered_pages = site.headlines | sort:"order_number" | reverse %}
 
       {% for news in ordered_pages limit: 5 %}
-      {% if news.order_number != 1000000 %}
+      {% if news.order_number < 1000000 %}
 
         <div class="headlines-item">
         <h4> <a href="{{news.url}}"> {{ news.title }} </a> </h4> <p> {{news.lede}} </p>
