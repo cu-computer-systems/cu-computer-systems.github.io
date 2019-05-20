@@ -80,7 +80,7 @@ layout: default_style
       {% assign ordered_pages = site.posts | sort:"date" | reverse %}
 
       {% for news in ordered_pages limit: 5 %}
-      {% if news.order_number != 1000000 %}
+      {% if news.order_number < 1000000 %}
 
       <div class="headlines-item">
          <span class="badge">{{ news.date | date: '%B %d, %Y' }} </span>
