@@ -2,15 +2,36 @@
 layout: headlines_layout
 title: Distributed Scheduling for Cellular Data Transmissions
 caption: More efficient wireless networks
+date: 05/12/2019
 permalink: /projects/distributed-scheduling-cellular.html
 ---
 
-Wireless networks blah blah
+<!--
+add pic 4
+-->
 
-## Ongoing work
+
+## Distributed Coordination for Massive Downloading
+
+We presents a fully distributed scheduling framework called CASTLE (Client-side Adaptive Scheduler That minimizes Load
+and Energy), which jointly optimizes the spectral efficiency of cellular networks and battery consumption of smart
+devices. To do so, we focus on scenarios when many smart devices compete for cellular resources in the same base
+station: spreading out transmissions over time so that only a few devices transmit at once improves both spectral
+efficiency and battery consumption. To this end, we devise two novel features in CASTLE. First, we explicitly consider
+inter-cell interference for accurate cellular load estimation. Based on our observations, we exploit the RSRQ (Reference
+Signal Received Quality) and SINR as features in a machine learning algorithm to accurately estimate the cellular load.
+Second, we propose a fully distributed scheduling algorithm that coordinates transmissions between clients based on the
+locally estimated load level at each client. Our formulation for minimizing battery consumption at each device leads to
+an optimized backoff-based algorithm that fits practical environments. To evaluate these features, we prototype a
+complete LTE system testbed consisting of mobile devices, eNodeBs, EPC (Evolved Packet Core) and application servers.
+Our comprehensive experimental results show that CASTLE’s load estimation is up to 91\% accurate, and that CASTLE
+achieves higher spectral efficiency with less battery consumption, compared to existing centralized scheduling
+algorithms as well as a distributed CSMA-like protocol. Furthermore, we develop a light-weight SDK that can expedite the
+deployment of CASTLE into smart devices and evaluate it in a commercial LTE network.
+
 
 ## Publications
 
-* <i>CASTLE over the Air: Distributed Scheduling for Cellular Data Transmissions</i>"
+***CASTLE over the Air: Distributed Scheduling for Cellular Data Transmissions***
 by Jihoon Lee, Jinsung Lee, Youngbin Im, Sandesh Dhawaskar Sathyanarayana, and Parisa Rahimzadeh (University of Colorado Boulder); Xiaoxi Zhang (Carnegie Mellon University); Max Hollingsworth (University of Colorado Boulder); Carlee Joe-Wong (Carnegie Mellon University); Dirk Grunwald and Sangtae Ha (University of Colorado Boulder) was accepted to MobiSys 2019.
 
