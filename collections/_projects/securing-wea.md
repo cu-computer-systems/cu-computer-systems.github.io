@@ -2,7 +2,7 @@
 layout: headlines_layout
 title: Securing LTE Emergency Alerts
 caption: Emergency Message Broadcaster and Securing LTE Emergency Alert
-date: 05/21/2019
+date: 05/12/2019
 permalink: /projects/securing-wea.html
 ---
 
