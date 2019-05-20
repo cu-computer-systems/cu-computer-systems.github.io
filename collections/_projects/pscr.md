@@ -44,9 +44,7 @@ to be in use over the coming decades. These IoT devices will have very limited c
 provided from the network to process and respond to the physical input they are receiving. We believe that there is
 utility in taking inspiration from MEC in 5G and applying it to public safety communications. Latency to edge services and resiliency to loss of network connection is the major contribution of this work.
 
-<!--
-Add pic1
--->
+<img src="/assets/img/project/pscr/pic1_elastic_epc.jpg" width="100%">
 
 
 <!---
@@ -71,9 +69,8 @@ image dissemination and map retrieval, which is inspired by [Serval project](htt
 implement optimized distributed spatial data organized that can be used to rapidly identify shared and
 geo-spatially distributed representations of common map information.
 
-<!--
-Add pic3
--->
+
+<img src="/assets/img/project/pscr/pic3_map_sharing.jpeg" width="100%">
 
 
 <!--
