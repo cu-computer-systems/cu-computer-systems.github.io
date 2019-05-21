@@ -2,7 +2,7 @@
 layout: alumni_page
 name: Murad Kablan
 image_url: /assets/img/alumni/murad.png
-area: Network Architecture
+area: Networks, Cloud
 targeturl: https://muradkablan.com/
 output: true
 ---
