@@ -9,5 +9,6 @@ output: true
 
 ## Introduction
 
-MS student. Graduated in May, 2019
+MS. Graduated in May, 2019. 
+Advisor: Sangtae Ha
 
