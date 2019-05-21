@@ -2,7 +2,7 @@
 layout: headlines_layout
 title: Securing LTE Emergency Alerts
 caption: Mobile and wireless security
-date: 05/13/2019
+date: 5/12/2019
 permalink: /projects/securing-wea.html
 ---
 
