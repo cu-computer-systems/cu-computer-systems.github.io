@@ -1,7 +1,7 @@
 ---
 layout: alumni_page
 name: Blake Caldwell
-<!--image_url: /assets/img/alumni/blake.png-->
+image_url: /assets/img/alumni/blake.png
 area: Networks, Cloud
 targeturl: https://www.linkedin.com/in/blake-caldwell-8858bb29/
 output: true
