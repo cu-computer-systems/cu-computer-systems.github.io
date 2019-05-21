@@ -2,7 +2,7 @@
 layout: headlines_layout
 title: Distributed Scheduling for Cellular Data Transmissions
 caption: More efficient wireless networks
-date: 05/12/2019
+date: 5/12/2019
 permalink: /projects/distributed-scheduling-cellular.html
 ---
 
