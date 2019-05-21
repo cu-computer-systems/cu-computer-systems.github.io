@@ -59,6 +59,8 @@ collections:
     output: true
   postdocs:
     output: true
+  alumni:
+    output: true
   headlines:
     output: true
   projects:
