@@ -2,7 +2,7 @@
 layout: alumni_page
 name: Michael Coughlin
 image_url: /assets/img/alumni/michael_coughlin.png
-area: Security, Hardware
+area: Network security, Embeded systems
 targeturl: http://nsr.colorado.edu/coughlin/
 output: true
 ---
