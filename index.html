@@ -32,7 +32,7 @@ layout: default_style
 		      {% assign thispage = ordered_pages[i] %}
 		      {% if i == 0 %} <div class="item active"> {% else %}<div class="item">{% endif %}
 			<a href="{{thispage.targeturl}}">
-                          <img src="{{thispage.image_url}}" height="400" alt="{{thispage.image_alt}}">
+                          <img src="{{thispage.image_url}}" width="100%" alt="{{thispage.image_alt}}">
 			  
                           <div class="carousel-caption">
                                 <h3 class="carousel-title hidden-xs">{{thispage.title}}</h3>
