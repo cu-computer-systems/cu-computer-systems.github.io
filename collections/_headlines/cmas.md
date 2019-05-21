@@ -40,9 +40,14 @@ take years to fully roll out.
 
 ## Demonstration Video
 
+[![cmas_video](https://img.youtube.com/vi/XJ7FPYs2bIw/0.jpg)](https://www.youtube.com/watch?v=XJ7FPYs2bIw)
+
 ---
 
 ## Paper
+
+***This is Your President Speaking: Spoofing Alerts in 4G LTE Networks***
+by Gyuhong Lee, Jihoon Lee, Jinsung Lee, Youngbin Im, Max Hollingsworth, Eric Wustrow, Dirk Grunwald, and Sangtae Ha (University of Colorado Boulder) was accepted to MobiSys 2019.
 
 ---
 
