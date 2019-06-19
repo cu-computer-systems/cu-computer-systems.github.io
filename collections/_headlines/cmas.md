@@ -21,9 +21,9 @@ alerts can be disabled by users, Presidential Alerts cannot be turned
 off by end users, making spoofed alerts a significant threat for
 abuse.
 
-While these problems have already been discussed in a 3GPP study group
-previously[cite], we believe we are the first to publicly demonstrate
-a practical working attack. While we release the details of our
+While these problems have been previously discussed in a 3GPP study group
+previously, we believe we are the first to publicly demonstrate
+a practical working attack. While we have released the details of our
 attack, we are not releasing the code or modifications we developed to
 carry out this attack. It is our hope that our demonstration of this
 attack prompts carriers and manufacturers to find ways to ultimately
@@ -46,8 +46,8 @@ take years to fully roll out.
 
 ## Paper
 
-***This is Your President Speaking: Spoofing Alerts in 4G LTE Networks***
-by Gyuhong Lee, Jihoon Lee, Jinsung Lee, Youngbin Im, Max Hollingsworth, Eric Wustrow, Dirk Grunwald, and Sangtae Ha (University of Colorado Boulder) was accepted to MobiSys 2019.
+[***This is Your President Speaking: Spoofing Alerts in 4G LTE Networks***
+by Gyuhong Lee, Jihoon Lee, Jinsung Lee, Youngbin Im, Max Hollingsworth, Eric Wustrow, Dirk Grunwald, and Sangtae Ha (University of Colorado Boulder) was accepted to MobiSys 2019.](https://www.sigmobile.org/mobisys/2019/papers/)
 
 ---
 
@@ -60,8 +60,10 @@ they are physically close, it does not allow country-wide spoofed
 alerts. Alerts can be verified through other channels, such as local
 radio, TV, or the Internet.
 
-How close does an attacker have to be to spoof alerts? What is the
-range of the attack?  Our analysis shows that an attacker with a
+### How close does an attacker have to be to spoof alerts? 
+### What is the range of the attack?
+
+Our analysis shows that an attacker with a
 modest 1 Watt transmitter can spoof alerts to the vast majority of
 cell phones within a 1km range.
 
