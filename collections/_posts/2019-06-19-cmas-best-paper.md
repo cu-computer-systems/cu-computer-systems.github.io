@@ -3,7 +3,7 @@ layout: blog_layout
 date: 2019-06-19
 title: Best Paper Award at MobiSys'19 for "This is your President Speaking"
 caption:
-image_url: /assets/img/slider/lab-bench.png
+image_url: /assets/img/posts/mobisys-2019-best-paper.jpg
 label_default: "lab" 
 label_primary: "paper"
 label_success: "blog"
