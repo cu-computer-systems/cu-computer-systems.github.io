@@ -3,7 +3,7 @@ layout: student_page
 name: Jack Wampler
 image_url: /assets/img/students/jmwample.png
 area: Security, Networks
-permalink: /people/students/max-hollingsworth
+permalink: https://jack.wampler.co/
 output: true
 ---
 
