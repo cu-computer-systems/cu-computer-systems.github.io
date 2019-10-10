@@ -78,7 +78,7 @@ permalink: /areas
         <div class="services-group wow animated fadeInRight" data-wow-offset="40">
       <h2> <span class="fa fa-project-diagram"></span>
 	<!-- <a href="/areas/social.html"> Social Networks </a> </h2> -->
-	Social Networks</h2>
+	Social Networks and CyberSafety</h2>
 	    <div class="area-list-faculty">
 	      Faculty:
 	      {% assign folks_area = "Social" %}
