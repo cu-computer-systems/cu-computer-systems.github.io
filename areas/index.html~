@@ -1,0 +1,93 @@
+---
+layout: default_style
+permalink: /areas
+---
+
+<body>
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-1"> </div>
+
+    <div class="col-xs-1">
+    </div>
+
+    <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
+      <h1 class="title-text"> Research Areas </h1> <hr>
+      <div class="area-list">
+      {% assign folks_gallery = site.faculty %}
+      {% assign folks_sep = "," %}
+
+        <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+      <h2> <span class="fas fa-network-wired"></span>
+	<!-- <a href="/areas/networks.html"> Datacenter and Wide-Area Networking </a> </h2> -->
+	Datacenter and Wide-Area Networking</h2>
+      Computer networks are core to the operation of datacenters and the networks that
+      extend from them.
+	    <div class="area-list-faculty">
+	      Faculty:
+	      {% assign folks_area = "Networks" %}
+	      {% include folks_by_area %}
+	    </div>
+	    </div>
+
+        <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+      <h2> <span class="fa fa-broadcast-tower"></span>
+	<!-- <a href="/areas/mobile.html"> Mobile and Wireless Networking  </a> </h2> -->
+	Mobile and Wireless Networking </h2>
+      Mobile devices and wireless networks are how most people connect to the internet.
+	    <div class="area-list-faculty">
+	      Faculty:
+	      {% assign folks_area = "Mobile" %}
+	      {% include folks_by_area %}
+	    </div>
+	</div>
+
+        <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+      <h2> <span class="fa fa-user-lock"></span>
+	<!-- <a href="/areas/security.html"> Computer and Cyberphysical Security </a> </h2> -->
+	Computer and Cyberphysical Security </h2>
+	    <div class="area-list-faculty">
+	      Faculty:
+	      {% assign folks_area = "Security" %}
+	      {% include folks_by_area %}
+	    </div>
+	</div>
+
+        <div class="services-group wow animated fadeInRight" data-wow-offset="40">      <h2> <span class="fa fa-save"></span>
+	<!-- <a href="/areas/storage.html"> Storage and Data Organization </a> </h2> -->
+	Storage and Data Organization </h2>
+	    <div class="area-list-faculty">
+	      Faculty:
+	      {% assign folks_area = "Storage" %}
+	      {% include folks_by_area %}
+	    </div>
+	</div>
+
+        <div class="services-group wow animated fadeInLeft" data-wow-offset="40">
+      <h2> <span class="fa fa-microchip"></span>
+	<!-- <a href="/areas/hardware.html"> Computer Hardware </a> </h2> -->
+	Computer Hardware </h2>
+	    <div class="area-list-faculty">
+	      Faculty:
+	      {% assign folks_area = "Hardware" %}
+	      {% include folks_by_area %}
+	    </div>
+	</div>
+
+        <div class="services-group wow animated fadeInRight" data-wow-offset="40">
+      <h2> <span class="fa fa-project-diagram"></span>
+	<!-- <a href="/areas/social.html"> Social Networks </a> </h2> -->
+	Social Networks</h2>
+	    <div class="area-list-faculty">
+	      Faculty:
+	      {% assign folks_area = "Social" %}
+	      {% include folks_by_area %}
+	    </div>
+	</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
