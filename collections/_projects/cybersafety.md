@@ -8,5 +8,5 @@ permalink: /projects/cybersafety.html
 ---
 
 [<img src="/assets/img/project/cybersafety/cybersafety.png" width="100%">](http://www.cucybersafety.org)
-<img src="/assets/img/project/cybersafety/cybersafety.png" width="100%">
+
 
