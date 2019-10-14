@@ -7,7 +7,7 @@ date: 10/12/2019
 permalink: /projects/cybersafety.html
 ---
 
-See [CyberSafety](http://www.cucybersafety.org) for more details.
+%See [CyberSafety](http://www.cucybersafety.org) for more details.
 
 [<img src="/assets/img/project/cybersafety/cybersafety.png" width="100%">](http://www.cucybersafety.org)
 
