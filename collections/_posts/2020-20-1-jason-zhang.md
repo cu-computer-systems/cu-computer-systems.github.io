@@ -7,6 +7,6 @@ image_url: https://www.colorado.edu/graduateschool/sites/default/files/styles/me
 label_default: "lab" 
 label_success: "blog"
 ---
-Jason Zhang (cc’d), one of our CS PhD students in the finals presented his work on Building Bridges Between Groups and Reducing Polarization at the [three minute thesis competition](https://www.colorado.edu/graduateschool/professional-development/research-writing/three-minute-thesis).
+Jason Zhang, one of our CS PhD students in the finals presented his work on Building Bridges Between Groups and Reducing Polarization at the [three minute thesis competition](https://youtu.be/gS7zv-HQWac).
 
 He did an excellent job and earned second place in the competition earning a $750 prize that he can apply towards his research. Jason is co-advised by Christine Liu and Chenhao Tan and works closely with Rick Han and Shivakant Mishra.
