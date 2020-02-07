@@ -3,7 +3,7 @@ layout: blog_layout
 date: 2020-2-1
 title: Jason Zhang takes 2nd Place in CU's Three Minute Thesis
 caption:
-image_url: https://www.colorado.edu/graduateschool/sites/default/files/styles/medium/public/page/3mt_logo-colour.jpg?itok=ztSGKjPy
+image_url: https://youtu.be/gS7zv-HQWac
 label_default: "lab" 
 label_success: "blog"
 ---
