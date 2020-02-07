@@ -6,18 +6,16 @@
         <h3><i class="fa fa-map-marker"></i> Contact:</h3>
         <p class="footer-contact">
           {{ site.company_name }} <br>
-          Phone: {{ site.telephone_number }} <br>
-          Fax: {{ site.fax_number }} <br>
-          Email: {{ site.company_email }}<br>
+          Address: {{ site.address_line }} <br>
         </p>
       </div>
       <div class="col-md-4">
         <h3><i class="fa fa-external-link"></i> Links</h3>
-        <p><a href="/about.html"> About ( Who we are )</a></p>
-        <p><a href="/areas.html"> Research ( What we do )</a></p>
-        <p><a href="/contact.html"> Contact ( Feel free to contact )</a></p>
-        <p><a href="/blog.html"> News ( What happened )</a></p>
-        <p><a href="/people/faculty.html"> People ( Meet the Team )</a></p> 
+        <p><a href="/about.html"> About (Who we are)</a></p>
+        <p><a href="/areas.html"> Research (What we do)</a></p>
+        <p><a href="/contact.html"> Contact (Feel free to contact)</a></p>
+        <p><a href="/blog.html"> News (What happened)</a></p>
+        <p><a href="/people/faculty.html"> People (Meet the team)</a></p> 
       </div>
       <div class="col-md-4">
         <h3><i class="fa fa-heart"></i> Socialize</h3>
@@ -51,6 +49,6 @@
   </div>
 
   <div class="copyright text center">
-    <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="#">{{site.url}}</a>.
+    <p>&copy; Copyright {{ site.time | date: '%Y' }} <a href="#">{{site.url}}</a>.
   </div>
 </footer>

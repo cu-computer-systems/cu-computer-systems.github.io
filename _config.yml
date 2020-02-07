@@ -23,7 +23,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Company Information
 company_name: Department of Computer Science
 address_line: 1111 Engineering Dr, Boulder, CO 80309
-company_email: hello@LawOffice.org
+## company_email: hello@LawOffice.org
 google_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2046.7588250319618!2d-105.26317534775626!3d40.007031828249744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bedcb99bb71b9%3A0xadccadbd9ea75dc7!2sEngineering+Center%2C+1111+Engineering+Dr%2C+Boulder%2C+CO+80309!5e0!3m2!1sen!2sus!4v1557163990296!5m2!1sen!2sus
 
 # Social Link
