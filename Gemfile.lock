@@ -254,6 +254,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+  kramdown (>= 2.3.0)
   minima (~> 2.0)
   tzinfo-data
 
