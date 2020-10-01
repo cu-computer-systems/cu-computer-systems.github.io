@@ -79,7 +79,7 @@ layout: default_style
       <div class="lead"> <h2> News </h2> </div>
       {% assign ordered_pages = site.posts | sort:"date" | reverse %}
 
-      {% for news in ordered_pages limit: 5 %}
+      {% for news in ordered_pages limit: 10 %}
       {% if news.order_number != 1000000 %}
 
       <div class="headlines-item">
