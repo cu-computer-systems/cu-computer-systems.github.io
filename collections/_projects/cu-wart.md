@@ -1,7 +1,7 @@
 ---
 layout: headlines_layout
 title: CU Wide Area Radio Testbed
-caption: Mobile and Wireless security
+caption: Mobile and Wireless Networking
 date: 5/12/2019
 permalink: /projects/cu-wart.html
 ---
