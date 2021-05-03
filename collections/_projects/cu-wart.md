@@ -28,12 +28,21 @@ the National Telecommunications and Information Agency (NTIA/ITS).
 This resource is part of a [cooperative research agreement between the University of Colorado and NTIA/ITS](https://www.ntia.gov/press-release/2018/ntia-signs-agreement-wireless-test-bed-study-partnership-university-colorado).
 That project enables measurement of wireless spectrum and system occupancy and spectrum utilization, testing and evaluation of spectrum sharing scenarios, and validation of radio wave propagation models. It also will help to develop early interference detection, interference mitigation, and spectrum forensics techniques.
 
-Within the NTIA/ITS collaboration multiple of their Greyhound sensors have been deployed around campus; covering over 400,000 square meters. These sensors are composed of SDRs (Ettus USRP B210), Intel Nuc, and front end RF filtering. They are controlled through [NTIA/ITS’s SCOS remote sensing software architecture](https://github.com/NTIA/scos-sensor).  The sensor’s development and calibration is described in more detail by (Mathys, 2019) cited below. These sensors have been used to monitor the 700 MHz band occupancy, and to perform a proof-a-concept for cell-site TDOA-geolocation of commercial cells in the 700 MHz bands.
+Within the NTIA/ITS collaboration, multiple of their Greyhound sensors have been deployed around campus; covering over 400,000 square meters. These sensors are composed of SDRs (Ettus USRP B210), Intel Nuc, and front end RF filtering. They are controlled through [NTIA/ITS’s SCOS remote sensing software architecture](https://github.com/NTIA/scos-sensor).  The sensor’s development and calibration is described in more detail by (Mathys, 2019) cited below. These sensors have been used to monitor the 700 MHz band occupancy, and to perform a proof-a-concept for cell-site TDOA-geolocation of commercial cells in the 700 MHz bands.
 
 
 ## Testbed Information
 
+**Roof Sensor Locations**
+- University Memorial Center
+- Flemming Law Building
+- Folsom Football Stadium
+- Engineering Center
+- Duane Physics Building
+- Stearns Residence Hall
+
 <img src="/assets/img/project/cu-wart/WART-map.jpg" width="100%">
+
 
 ## Publications
 
