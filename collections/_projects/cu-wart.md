@@ -38,3 +38,4 @@ That project enables measurement of wireless spectrum and system occupancy and s
 
 [C. Phillips, D. Sicker and D. Grunwald, "Bounding the error of path loss models," 2011 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), 2011, pp. 71-82, doi: 10.1109/DYSPAN.2011.5936271.](https://ieeexplore.ieee.org/document/5936271)
 
+[Mathys, Peter. "Spectrum Monitoring Network: Tradeoffs, Results, and Future Directions." Proceedings of the GNU Radio Conference, v. 4, n. 1, sep. 2019.](https://pubs.gnuradio.org/index.php/grcon/article/view/60)
