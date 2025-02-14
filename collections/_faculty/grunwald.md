@@ -9,13 +9,9 @@ permalink: /people/faculty/dirk_grunwald
 linkedin_link: https://www.linkedin.com/in/dirk-grunwald-7735202
 output: true
 ---
-Dirk Grunwald is Professor at the University of Colorado at Boulder,
-in the Department of Computer Science in 1989 and had been a member of
-the faculty of the Department of Computer Science at the University of
-Colorado since that time.
+Dirk Grunwald is Professor at the University of Colorado at Boulder, in the Department of Computer Science in 1989 and had been a member of the faculty of the Department of Computer Science at the University of Colorado since that time.
 
-Dr. Grunwald holds a joint appointment in the Dept. of Electrical and
-Computer Engineering.
+Dr. Grunwald holds a joint appointment in the Dept. of Electrical and Computer Engineering. He was the Director of the Colorado Center for Information Storage (CCIS) in the early 2000's until that center closed.
 
 Dr. Grunwald is also founded and was the initial Faculty Director of the [online Post-Baccalaureate degree in Computer Science](https://www.colorado.edu/cs/cs-online).
 
