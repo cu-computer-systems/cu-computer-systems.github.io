@@ -1,12 +1,17 @@
 <!doctype html>
 <html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+{% include header.html %}
+{% include script.html %}
 
-  {% include head.html %}
-  {% include header.html %}
-  {% include script.html %}
+<div class="container py-4">
+    {{ content }}
+</div>
 
-  {% capture peopletype %} Student {% endcapture %}
-  {% include people_page %}
-
-  {% include footer.html %}
+{% include footer.html %}
+</body>
 </html>
+

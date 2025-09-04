@@ -1,52 +1,10 @@
 <!-- Header -->
-<nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
-  <div class="container">
-  <a href="/">
-  <div class="nav-logo center">
-  <h1> Computer Systems @ CU </h1> 
-  </div>
-  </a>
-
-  
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-
-<nav id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
-    <ul class="nav navbar-nav pull-right">
-        {% assign links = site.data.navigation %}
-        {% for link in links %}
-            {% assign class = nil %}
-            {% if page.url contains link.url %}
-                {% assign class = 'active' %}
-            {% endif %}
-            {% if link.sublinks %}
-                <li class="dropdown {{ class }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        {% for sublink in link.sublinks %}
-                            {% if sublink.title == 'separator' %}
-                                <li role="separator" class="divider"></li>
-                            {% else %}
-                                <li>
-                                    <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </li>
-            {% else %}
-                <li class="{{ class }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-</nav>
-</nav>
-<!-- End Header -->
+<header id="header-title" style="background-image: url('{{ '/assets/img/cropped-fpga.jpg' | relative_url }}'); color: #fff; padding: 20px 0;">
+    <div class="container text-center">
+        <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">
+            <h1 style="margin: 0; font-weight: 800; font-family: 'Raleway', sans-serif;">
+                <strong>Computer Systems @ CU </strong>
+            </h1>
+        </a>
+    </div>
+</header>
