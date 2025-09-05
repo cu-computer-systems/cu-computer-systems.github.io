@@ -2,95 +2,139 @@
 layout: default_style
 ---
 
-  {% assign ordered_pages = site.headlines | sort:"order_number" | reverse %}
-  {% assign num_pages = ordered_pages | size | minus: 1%}
+<body>
+<div class="text-center" style="margin-top: 10px;">
+    <a href="#about" class="text-primary" style="margin-right: 15px;"><strong>About</strong></a>
+    <a href="#faculty" class="text-primary" style="margin-right: 15px;"><strong>Faculty</strong></a>
+    <a href="#research-areas" class="text-primary" style="margin-right: 15px;"><strong>Research Areas</strong></a>
+    <a href="#gallery" class="text-primary" style="margin-right: 15px;"><strong>Gallery</strong></a>
+<!--    <a href="{{ '/gallery' | relative_url }}" class="text-primary" style="margin-right: 15px;"><strong>Gallery</strong></a>-->
 
-  <body>
-    <!-- Begin #carousel-section -->
-    <section id="carousel-section" class="section-global-wrapper"> 
-        <div class="col-sm-2 col-md-2 col-xs-1"> </div>
-        <div class="container col-sm-8 col-md-8 col-lg-8" >
-          <div class="row center">
-                <div id="carousel-1" class="carousel slide" data-ride="carousel">
+<!--    <a href="#contact" class="text-primary"><strong>Contact Us</strong></a>-->
+</div>
 
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators visible-lg">
-		      {% for i in (0..num_pages) %}
-			  {% if i == 0 %} 
-                      <li data-target="#carousel-1" data-slide-to="{{i}}" class="active" >
-			{% else %} 
-		      <li data-target="#carousel-1" data-slide-to="{{i}}" >
-			{% endif %}
-		      </li>
-		      {% endfor %}
-                    </ol>
-        
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                      <!-- Begin Slide 1 -->
-		      {% for i in (0..num_pages) %}
-		      {% assign thispage = ordered_pages[i] %}
-		      {% if i == 0 %} <div class="item active"> {% else %}<div class="item">{% endif %}
-			<a href="{{thispage.targeturl}}">
-                          <img src="{{thispage.image_url}}" width="100%" alt="{{thispage.image_alt}}">
-			  
-                          <div class="carousel-caption">
-                                <h3 class="carousel-title hidden-xs">{{thispage.title}}</h3>
-                                <h4 class="carousel-body">{{thispage.caption}}</h4>
-                            </div>
-			    </a>
-                        </div>
-			{% endfor %}
-                        <!-- End Slide template -->
-                    </div>
-        
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-1" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-1" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+<!-- Lab banner image -->
+<div class="container text-center" style="margin-top: 20px; margin-bottom: 20px;">
+    <img src="{{ '/assets/img/banner.jpg' | relative_url }}" alt="Lab Group Photo" class="img-responsive" style="max-width: 100%; height: auto;">
+</div>
+
+<!-- About Section -->
+<section id="about" class="section-global-wrapper">
+    <div class="container">
+        <h2 class="title-text">About Computer Systems Lab @ CU</h2>
+        <hr />
+<!--        <p>The Computer Systems Lab at CU consists of about 14 faculty whose expertise generally lies in building practical computer systems.</p>-->
+<!--        <p>Most of the Systems faculty are co-located in a single large lab with their students.</p>-->
+<!--        <p>Students and faculty receive funding for and work in areas including large scale network systems; cloud and edge computing; distributed systems; virtualization; wireless and mobile systems including IoT, drones, and sensors; privacy preserving networks; network security and anticensorship; computer architecture security; autonomous and software-defined networks; automotive and telematics systems; social computing; data analytics; distributed and embedded machine learning and computer vision; and cybersafety and cyberbullying.</p>-->
+          <p> The Computer Systems Lab at CU consists of about 12 faculty whose expertise generally lies in building practical computer systems.</p>
+          <p> Most of the Systems faculty share a large, collaborative lab space with their students.</p>
+          <p> Together, faculty and students pursue funded research across a broad range of areas, including Networking, Wireless and Mobile Systems, Machine Learning Systems and Infrastructure, Data and IoT Analytics, Storage, Memory and Nonvolatile Systems, Control and Optimization of Complex Systems, Privacy, Policy and Social Computing, Quantum Computing, Anticensorship and Software Security, and Hardware and Microarchitectural Security.</p>
+    </div>
+</section>
+
+<!-- Faculty -->
+<section id="faculty" class="section-global-wrapper">
+    <div class="container">
+        <h1 class="title-text">Faculty</h1>
+        <hr />
+        <div class="row">
+            {% for prof in site.data.faculty %}
+            <div class="col-md-4 col-sm-6">
+                <div class="card faculty-card d-flex flex-column justify-content-between"
+                     style="min-height: 370px; display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 30px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center;">
+
+                    {% if prof.image_url %}
+                    <img src="{{ prof.image_url | relative_url }}" alt="{{ prof.name }}" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
+                    {% else %}
+                    <img src="{{ '/assets/img/faculty/default.jpg' | relative_url }}" alt="No photo available" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 15px; opacity: 0.5;">
+                    {% endif %}
+
+                    <h3 style="margin-bottom: 10px;">{{ prof.name }}</h3>
+
+                    {% if prof.website %}
+                    <p><a href="{{ prof.website }}" target="_blank">Website</a></p>
+                    {% endif %}
+
+                    {% if prof.areas %}
+                    {% for area in prof.areas %}
+                    {{ area }}{% if forloop.last == false %}, {% endif %}
+                    {% endfor %}
+                    {% endif %}
                 </div>
             </div>
+            {% endfor %}
         </div>
-    </section>
-    <!-- End #carousel-section -->
-
-    <section id="services" class="services-section section-global-wrapper">
-
-    <div class="headlines-header col-sm-6 col-md-6 col-lg-6">
-
-      <div class="lead"> <h2> Highlights </h2> </div>
-      {% assign ordered_pages = site.headlines | sort:"order_number" | reverse %}
-
-      {% for news in ordered_pages limit: 5 %}
-      {% if news.order_number < 1000000 %}
-
-        <div class="headlines-item">
-        <h4> <a href="{{news.url}}"> {{ news.title }} </a> </h4> <p> {{news.lede}} </p>
-        </div>
-      {% endif %}
-      {% endfor %} 
     </div>
+</section>
 
-    <div class="headlines-header col-sm-6 col-md-6 col-lg-6">
+<!-- Research Areas Section -->
+<section id="research-areas" class="container py-5">
+    {% include area.html %}
+</section>
 
-      <div class="lead"> <h2> News </h2> </div>
-      {% assign ordered_pages = site.posts | sort:"date" | reverse %}
 
-      {% for news in ordered_pages limit: 10 %}
-      {% if news.order_number != 1000000 %}
 
-      <div class="headlines-item">
-         <span class="badge">{{ news.date | date: '%B %d, %Y' }} </span>
-         <a href="{{news.url}}"> {{ news.title }} </a> <p> {{news.caption}} </p>
+<!-- Contact Section -->
+<!--<section id="contact" class="section-global-wrapper">-->
+<!--    <div class="container">-->
+<!--        <h1 class="title-text">Contact Us</h1>-->
+<!--        <hr />-->
+
+<!--        <div class="row">-->
+<!--            <div class="col-md-4">-->
+<!--                <img src="{{ '/assets/img/systems-lab-map.png' | relative_url }}" alt="Lab Map" class="img-fluid rounded mb-3" width="100%" />-->
+<!--                <h4>Directions</h4>-->
+<!--                <p>-->
+<!--                    The Computer Systems @ CU lab is in the ground/basement ("1B") level of the Engineering Center.-->
+<!--                    The easiest entrance to locate is through the door in the courtyard, as shown. Immediately-->
+<!--                    on entering that door, you'll find a hallway to the left that leads to the faculty offices,-->
+<!--                    meeting rooms and student lab.-->
+<!--                </p>-->
+<!--            </div>-->
+
+<!--            <div class="col-md-8 mb-4">-->
+<!--                <iframe width="100%" height="450px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"-->
+<!--                        src="{{ site.google_map }}"></iframe>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="row mt-4">-->
+<!--            <div class="col-lg-6">-->
+<!--                <h4>Find us at:</h4>-->
+<!--                <p class="block-author">{{ site.company_name }}</p>-->
+<!--                <p>{{ site.address_line }}</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Gallery Title -->
+<section id="gallery" class="container py-5">
+<div class="container">
+    <h1 class="title-text">Gallery</h1>
+    <hr />
+</div>
+
+<!-- Gallery Content -->
+<div class="container">
+    {% for item in site.data.gallery %}
+    <div class="mb-5">
+        <h3 class="mb-3">{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+
+        <div class="row">
+            {% for image in item.image_url %}
+            <div class="col-md-4 col-sm-6 mb-4">
+                <img src="{{ image | relative_url }}"
+                     alt="{{ item.title }}"
+                     class="img-fluid rounded shadow-sm"
+                     style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            {% endfor %}
         </div>
-      {% endif %}
-      {% endfor %} 
     </div>
+    {% endfor %}
+</div>
+</section>
 
-
-    </section>
-
-  </body>
+</body>
