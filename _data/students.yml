@@ -1,0 +1,125 @@
+- name: Ali Tariq
+  image_url: /assets/img/students/ali.png
+  area: Networks, Cloud
+  url: https://alitariqcu.weebly.com
+
+- name: Ange-Thierry Ishimwe
+  image_url: /assets/img/students/Ange-Thierry_Ishimwe.png
+  area: Computer architecture, microarchitectural security, FPGA development, Compiler Optimization
+  url: https://www.linkedin.com/in/ange-thierry-ishimwe-202082139/
+
+- name: Austin Pahl
+  image_url: /assets/img/students/austin.png
+  area: Networks, Cloud
+  url: https://austinrp.github.io
+
+- name: Ayan Chowdhury
+  image_url: /assets/img/students/Ayan_Chowdhury.png
+  area: Recommendation systems, social media analysis, toxicity analysis, machine learning for social media analysis
+  url: https://www.linkedin.com/in/ayan-chowdhury/
+
+- name: Fei Hu
+  image_url: /assets/img/students/fhu.png
+  area: IoT, Security, Edge
+
+- name: Hyoyoung Lim
+  image_url: /assets/img/students/hyoyoung.png
+  area: Mobile Systems
+  url: /people/students/hyoyoung-lim
+
+- name: Ibrahim Ayad
+  image_url: /assets/img/students/ibrahim.png
+  area: Multimedia
+  url: /people/students/ibrahim-ayad
+
+- name: Insoo Lee
+  image_url: /assets/img/students/insoo.png
+  area: Mobile Systems
+  url: /people/students/insoo-lee
+
+- name: Jack Wampler
+  image_url: /assets/img/students/jmwample.png
+  area: Security, Networks
+  url: https://jack.wampler.co/
+
+- name: Jaeyoung Oh
+  image_url: /assets/img/students/jaeyoung.png
+  area: Mobile Systems
+  url: /people/students/jaeyoung-oh
+
+- name: Jason Schnitzer
+  image_url: /assets/img/students/jason.png
+  area: Autonomic Networking, DOCSIS
+  url: http://www.appliedbroadband.com/company#story
+
+- name: Jason Zhang
+  image_url: /assets/img/students/jason-zhang.png
+  area: Ubiquitous Computing, Computational Social Science
+  url: http://jasondarkblue.com
+
+- name: Max Hollingsworth
+  image_url: /assets/img/students/max-hollingsworth.png
+  area: Wireless Networks, Security
+  url: /people/students/max-hollingsworth
+
+- name: Parisa Rahimzadeh
+  image_url: /assets/img/students/parisa.png
+  area: Machine Learning, Fog/Cloud
+  url: https://sites.google.com/colorado.edu/parisa-rahimzadeh/home
+
+- name: Phaedra Curlin
+  image_url: /assets/img/students/Phaedra_Curlin.png
+  area: Hardware security, computer architecture, cryptography, microarchitectural security metrics
+  url: https://github.com/PSCurlin
+
+- name: Prasanth Prahladan
+  image_url: /assets/img/students/prasanth.png
+  area: Machine Learning, Cloud/Fog
+  url: /people/students/prasanth-prahladan
+
+- name: Rhett Hanscom
+  image_url: /assets/img/students/Rhett_Hanscom.png
+  area: Social media analysis, misinformation, recommendation systems, toxicity analysis, machine learning for social media analysis
+
+- name: Saiyma Sarmin
+  image_url: /assets/img/students/saiyma.png
+  area: Networks, Cloud
+  url: https://sites.google.com/site/smrity48/
+
+- name: Sam Mcdermid Sterling
+  image_url: /assets/img/students/Sam_Mcdermid_Sterling.png
+  area: Computer architecture, microarchitecture security, GPU security, machine learning robustness
+  url: https://www.linkedin.com/in/sam-mcdiarmid-sterling-504291246/
+
+- name: Samuel Thomas
+  image_url: /assets/img/students/Samuel_Thomas.png
+  area: Social media analysis, misinformation, recommendation systems, toxicity analysis, machine learning for social media analysis
+  url: https://www.linkedin.com/in/samuel-thomas-a7243a102/
+
+- name: Shazal Irshad
+  image_url: /assets/img/students/shazal.png
+  area: Networks, Cloud
+  url: https://www.linkedin.com/in/shazal-irshad-519a735a/
+
+- name: Siqi Chen
+  image_url: /assets/img/students/siqi.png
+  area: Internet Systems, Mobile Networks
+  url: /people/students/siqi-chen
+
+- name: Tao Ruan
+  image_url: /assets/img/students/taoruan.png
+  area: Computational Social Science, Roadway Electrification
+
+- name: Yichen Wang
+  image_url: /assets/img/students/yichen.png
+  area: Computational Social Science
+
+- name: Zach Moolman
+  image_url: /assets/img/students/Zach_Moolman.png
+  area: Secure Memory, Computer Architecture, Processor Design, Trusted Execution Environments
+  url: https://www.linkedin.com/in/jzmoolman/
+
+- name: Zhang Liu
+  image_url: /assets/img/students/zhang.png
+  area: Cloud Storage
+  url: /people/students/zhang-liu
