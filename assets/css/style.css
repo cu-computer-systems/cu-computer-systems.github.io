@@ -814,3 +814,22 @@ footer h3 {
     font-size: 14px;
   }
 }
+
+.banner-container {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+#research-areas .services-group ul {
+  padding-left: 2rem; /* move bullets right */
+  margin-top: 0.5rem;
+}
