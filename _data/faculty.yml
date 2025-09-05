@@ -1,0 +1,83 @@
+- name: Ramin Ayanzadeh
+  image_url: /assets/img/faculty/ramin.jpeg
+  areas:
+    - Quantum Computing
+  website:  https://raminayanzadeh.com/
+
+- name: Yueqi Chen
+  image_url: /assets/img/faculty/yueqi-chen.jpeg
+  areas:
+    - Anticensorship and Software Security
+    - Quantum Computing
+  website: http://cusecurity.cs.colorado.edu/yueqichen/
+
+- name: Lijun Chen
+  image_url: /assets/img/faculty/lijun.png
+  areas:
+    - Control & Optimization of Complex Systems
+    - Quantum Computing
+  website: https://spot.colorado.edu/~lich1539/
+
+- name: Dirk Grunwald (Retired)
+  image_url: /assets/img/faculty/dirk-head.png
+  areas:
+    - Networking, Wireless & Mobile Systems
+    - Anticensorship and Software Security
+    - Storage, Memory & Nonvolatile Systems
+  website: https://www.colorado.edu/cs/dirk-grunwald
+  linkedin: https://www.linkedin.com/in/dirk-grunwald-7735202
+
+- name: Sangtae Ha
+  image_url: /assets/img/faculty/sangtaeha.png
+  areas:
+    - Networking, Wireless & Mobile Systems
+    - Machine Learning Systems & Infrastructure
+    - Storage, Memory & Nonvolatile Systems
+  website: http://netstech.org/sangtaeha/
+
+- name: Joe Izraelevitz
+  image_url: /assets/img/faculty/izraelevitz.png
+  areas:
+    - Hardware & Microarchitectural Security
+    - Storage, Memory & Nonvolatile Systems
+  website: https://www.colorado.edu/faculty/izraelevitz
+
+- name: Eric Keller
+  image_url: /assets/img/faculty/keller.png
+  areas:
+    - Networking, Wireless & Mobile Systems
+  website: https://eric-keller.github.io
+
+- name: Tamara Silbergleit Lehman
+  image_url: /assets/img/faculty/lehman.png
+  areas:
+    - Hardware & Microarchitectural Security
+    - Privacy, Policy & Social Computing
+    - Networking, Wireless & Mobile Systems
+  website: https://www.colorado.edu/faculty/lehmantamara
+
+- name: Christine Lv
+  image_url: /assets/img/faculty/christine.png
+  areas:
+    - Data & IoT Analytics
+    - Privacy, Policy & Social Computing
+  website: https://www.cs.colorado.edu/~lv/
+
+- name: Shivakant Mishra (On-Leave)
+  image_url: /assets/img/faculty/shiv.png
+  areas:
+    - Data & IoT Analytics
+    - Privacy, Policy & Social Computing
+  website: https://www.cs.colorado.edu/~mishras/
+
+- name: Eric Wustrow
+  image_url: /assets/img/faculty/wustrow.png
+  areas:
+    - Anticensorship and Software Security
+  website: https://ericw.us/trow/
+
+- name: Mark Zhao
+  image_url: /assets/img/faculty/mark-zhao.jpeg
+  areas:
+    - Machine Learning Systems & Infrastructure
+  website: https://home.cs.colorado.edu/~myzhao/

@@ -1,23 +1,23 @@
-- title: Home
-  url: /index.html
-- title: About
-  url: /about.html
-- title: Research Areas
-  url: /areas.html
-- title: News
-  url: /blog.html
-- title: People
-  url: /people/index.html
-  sublinks:
-    - title: Faculty
-      url: /people/faculty.html
-    - title: Postdocs 
-      url: /people/postdocs.html
-    - title: Students
-      url: /people/students.html
-    - title: Alumni
-      url: /people/alumni.html
-- title: Contact
-  url: /contact.html
-- title: Projects
-  url: /projects.html
+#- title: Home
+#  url: /index.html
+#- title: About
+#  url: /about.html
+#- title: Research Areas
+#  url: /areas.html
+#- title: News
+#  url: /blog.html
+#- title: People
+#  url: /people/index.html
+#  sublinks:
+#    - title: Faculty
+#      url: /people/faculty/
+#    - title: Postdocs
+#      url: /people/postdocs.html
+#    - title: Students
+#      url: /people/students.html
+##    - title: Alumni
+##      url: /people/alumni.html
+#- title: Contact
+#  url: /contact.html
+#- title: Projects
+#  url: /projects.html

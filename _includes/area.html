@@ -1,0 +1,48 @@
+<section id="research-areas" class="section-global-wrapper">
+    <div class="container">
+        <h1 class="title-text">Research Areas</h1>
+        <hr />
+        <div class="area-list">
+            {% assign faculty_list = site.data.faculty %}
+            {% for area in site.data.researchAreas %}
+<!--            <div class="services-group wow animated fadeIn{% if forloop.index0 % 2 == 0 %}Left{% else %}Right{% endif %}" data-wow-offset="40" style="margin-bottom: 40px;">-->
+            <div class="services-group" style="margin-bottom: 40px;">
+            <h2>
+                    {% case area.title %}
+                    {% when "Systems & Software Security" %}<span class="fa fa-shield-alt"></span>
+                    {% when "Hardware & Microarchitectural Security" %}<span class="fa fa-microchip"></span>
+                    {% when "Networking, Wireless & Mobile Systems" %}<span class="fas fa-network-wired"></span>
+                    {% when "Machine Learning Systems & Infrastructure" %}<span class="fa fa-robot"></span>
+                    {% when "Data & IoT Analytics" %}<span class="fa fa-chart-line"></span>
+                    {% when "Storage, Memory & Nonvolatile Systems" %}<span class="fa fa-save"></span>
+                    {% when "Control & Optimization of Complex Systems" %}<span class="fa fa-sliders-h"></span>
+                    {% when "Privacy, Policy & Social Computing" %}<span class="fa fa-user-secret"></span>
+                    {% else %}<span class="fa fa-laptop-code"></span>
+                    {% endcase %}
+                    {{ area.caption }}
+                </h2>
+                {{ area.description | markdownify }}
+
+                <div class="area-list-faculty">
+                    <strong>Faculty:</strong>
+                    {% assign links = "" %}
+                    {% for faculty in faculty_list %}
+                    {% if faculty.areas contains area.title %}
+                    {% if links != "" %}
+                    {% assign links = links | append: ", " %}
+                    {% endif %}
+                    {% if faculty.website contains 'http' %}
+                    {% assign link = "<a href='" | append: faculty.website | append: "' target='_blank'>" | append: faculty.name | append: "</a>" %}
+                    {% else %}
+                    {% assign link = "<a href='" | append: faculty.website | relative_url | append: "' target='_blank'>" | append: faculty.name | append: "</a>" %}
+                    {% endif %}
+                    {% assign links = links | append: link %}
+                    {% endif %}
+                    {% endfor %}
+                    {{ links }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

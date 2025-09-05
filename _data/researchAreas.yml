@@ -1,0 +1,110 @@
+- title: Networking, Wireless & Mobile Systems
+  caption: Networking, Wireless & Mobile Systems
+  tags:
+    - Networks
+    - Networking
+    - Wireless
+    - Mobile
+    - Protocols
+  description: |
+    - Researchers in the lab program P4-enabled switches to enforce fine-grained access controls at line rate. 
+    - We develop and evaluate congestion-control algorithms that cut datacenter tail latencies. 
+    - Wireless projects span end-to-end 5G slices for real-time telemedicine and mesh-networking protocols for disaster response. 
+    - Mobile-edge frameworks pre-fetch and cache critical data to support offline operation.
+
+- title: Machine Learning Systems & Infrastructure
+  caption: Machine Learning Systems & Infrastructure
+  tags:
+    - Machine Learning Systems
+    - ML Deployment
+    - Scalable Infrastructure
+    - Streaming Data
+  description: |
+    - We design computer systems that enable AI-powered applications across diverse domains.
+    - Our work focuses on building the core infrastructure needed to train and deploy large-scale machine learning models, applying innovations across the computing stack to make end-to-end training and inference pipelines more scalable, efficient, and secure.
+
+- title: Data & IoT Analytics
+  caption: Data & IoT Analytics
+  tags:
+    - Data Analytics
+    - IoT
+    - Social
+    - Distributed Learning
+  description: |
+    - We’ve created frameworks that fuse multimodal sensor data on low-power IoT nodes for real-time anomaly detection in agriculture and industrial settings. 
+    - Distributed learning algorithms adapt models on-device to shifting environmental conditions without raw data leaving the field. 
+    - Cloud back-ends aggregate insights to optimize resource allocation. Social-media mining tools identify and visualize coordinated inauthentic behavior.
+
+- title: Storage, Memory & Nonvolatile Systems
+  caption: Storage, Memory & Nonvolatile Systems
+  tags:
+    - Storage
+    - Nonvolatile Memory
+    - Persistent Memory
+    - Systems Software
+  description: |
+    - Our lab’s distributed file system combines erasure coding with adaptive caching to deliver sub-millisecond reads at petabyte scale. 
+    - Persistent-memory libraries expose byte-addressable durability without expensive checkpointing. 
+    - Hybrid hierarchies of DRAM, NAND-flash, and emerging phase-change memory are benchmarked under real datacenter workloads. 
+    - Tail-latency mitigation techniques balance throughput against fairness.
+
+- title: Control & Optimization of Complex Systems
+  caption: Control & Optimization of Complex Systems
+  tags:
+    - Control
+    - Optimization
+    - Systems Theory
+    - Distributed Systems
+  description: |
+    - We develop distributed consensus and control protocols that maintain stability under network partitions and variable delays. 
+    - Learning-based controllers automatically tune parameters in smart-grid and vehicular networks. 
+    - Resource-allocation schedulers optimize CPU, memory, and network slices to meet end-to-end QoS guarantees.
+
+- title: Privacy, Policy & Social Computing
+  caption: Privacy, Policy & Social Computing
+  tags:
+    - Privacy
+    - Social Computing
+    - Fairness
+    - Misinformation
+    - Policy
+  description: |
+    - Differential-privacy libraries add provable noise to large-scale analytics, balancing utility against individual risk. 
+    - Policy-aware query planners enforce data-access constraints mandated by regulations like GDPR. 
+    - We’ve built dashboards that visualize fairness metrics across demographic groups. 
+    - Trace-analysis tools map the spread of misinformation and bot-driven campaigns in real time.
+
+- title: Quantum Computing
+  caption: Quantum Computing
+  tags:
+    -Quantum Computing
+  description: |
+    - We advance trustworthy quantum computing to build reliable, secure, and scalable quantum systems that bridge hardware, software, and architecture.  
+    - By harnessing superposition, entanglement, and interference, our research enables quantum computers to solve problems beyond classical limits, with transformative impact across science, engineering, and society.
+
+- title: Anticensorship and Software Security
+  caption: Anticensorship and Software Security
+  tags:
+    - Systems
+    - Security
+    - Anticensorship
+    - Software Security
+    - Exploit Formalization
+    - Operating Systems
+  description: |
+    - Our lab analyzes how low-level flaws in kernels, hypervisors, and cryptographic libraries move from “just a crash” to a full exploit. 
+    - We formalize these exploit paths to triage vulnerability severity automatically and concentrate defenses where they matter most.
+    - By examining weird machines, unintended computational behaviors hidden inside software, we uncover new attack surfaces and craft lightweight mitigations that bring memory and type-safety to production code with minimal overhead.
+    - We’ve developed censorship-resistant proxy tools that maintain connectivity under challenging conditions.
+
+- title: Hardware & Microarchitectural Security
+  caption: Hardware & Microarchitectural Security
+  tags:
+    - Hardware
+    - Hardware Security
+    - Computer Architecture
+    - Memory Systems
+  description: |
+    - We design cryptographically protected cache architectures that render side-channel attacks infeasible. 
+    - Novel firmware-hardware co-designs isolate sensitive states in non-volatile memory, preventing rollback and replay exploits. 
+    - Our teams prototype power-analysis countermeasures on FPGA platforms. Current efforts explore secure enclaves for untrusted accelerators.
