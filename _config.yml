@@ -17,8 +17,8 @@ title: Computer Systems @ Colorado
 email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   The Computer Systems Research Lab @ the University of Colorado, Boulder.
-baseurl: "/cu-computer-systems.github.io"
-url: "https://somya290997.github.io"
+baseurl: ""
+url: "https://systems.cs.colorado.edu"
 
 # Company Information
 company_name: Department of Computer Science
