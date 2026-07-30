@@ -51,6 +51,10 @@ layout: default_style
 
                     <h3 style="margin-bottom: 10px;">{{ prof.name }}</h3>
 
+                    {% if prof.note %}
+                    <p style="font-size: 0.85em; color: #777; margin-bottom: 10px;">{{ prof.note | strip | newline_to_br }}</p>
+                    {% endif %}
+
                     {% if prof.website %}
                     <p><a href="{{ prof.website }}" target="_blank">Website</a></p>
                     {% endif %}

@@ -7,8 +7,9 @@
 - name: Yueqi Chen
   image_url: /assets/img/faculty/yueqi-chen.jpeg
   areas:
-    - Anticensorship and Software Security
-    - Quantum Computing
+    - Agentic System
+    - Software Security
+    - Quantum Control
   website: http://cusecurity.cs.colorado.edu/yueqichen/
 
 - name: Lijun Chen
@@ -69,6 +70,17 @@
     - Data & IoT Analytics
     - Privacy, Policy & Social Computing
   website: https://www.cs.colorado.edu/~mishras/
+
+- name: Joshua Viszlai
+  image_url: /assets/img/faculty/jviszlai.png
+  note: |
+    Visiting Assistant Professor
+    Joining CU Boulder in August 2027
+    Currently Quantum Software Engineer at Infleqtion
+  areas:
+    - Quantum Computing
+    - Quantum Error Correction
+  website: https://jviszlai.github.io/
 
 - name: Eric Wustrow
   image_url: /assets/img/faculty/wustrow.png

@@ -30,15 +30,19 @@ Nearly all content lives in the YAML files under `_data/` — you rarely need to
 Edit `_data/faculty.yml`. Entries are sorted alphabetically by last name:
 
 ```yaml
-- name: Yueqi Chen
-  image_url: /assets/img/faculty/yueqi-chen.jpeg
+- name: Joshua Viszlai
+  image_url: /assets/img/faculty/jviszlai.png
+  note: |
+    Visiting Assistant Professor
+    Joining CU Boulder in August 2027
   areas:
-    - Anticensorship and Software Security
     - Quantum Computing
-  website: http://cusecurity.cs.colorado.edu/yueqichen/
+  website: https://jviszlai.github.io/
 ```
 
-Put the photo in `assets/img/faculty/`. Each string under `areas` must match a `tags` entry in `_data/researchAreas.yml` — that is how people get grouped under a research area on the page.
+Put the photo in `assets/img/faculty/`. Only `name` is required; `image_url`, `note`, `areas`, and `website` are all optional. Without `image_url` the card falls back to `assets/img/faculty/default.jpg`. `note` is an optional block of small grey text under the name — use it for things like incoming appointments or leave status.
+
+**`areas` values must exactly match a `title:` in `_data/researchAreas.yml`.** That string match is what places someone under a research area in the Research Areas section. Anything that does not match still shows on the person's card but groups them nowhere. (The `tags:` field in `researchAreas.yml` is not used by any template.)
 
 ### Edit a research area
 
@@ -54,7 +58,7 @@ Edit `_data/researchAreas.yml`:
     - Markdown bullet points describing the area.
 ```
 
-`tags` is the list of labels that match the `areas:` values in `_data/faculty.yml`.
+`title` is what faculty entries reference in their `areas:` list, so renaming a title means updating every `_data/faculty.yml` entry that used the old name. `caption` is the heading shown on the page and `description` is markdown. `tags` is unused by the templates — it is left over from an earlier version.
 
 ### Add gallery photos
 
