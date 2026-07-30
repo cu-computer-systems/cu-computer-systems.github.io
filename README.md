@@ -1,3 +1,13 @@
+# CU Computer Systems Website
+
+## Updating the Site
+
+To request an update to any page on this site, contact **Yueqi Chen** ([yueqi.chen@colorado.edu](mailto:yueqi.chen@colorado.edu)).
+
+---
+
+The sections below document the underlying Jekyll theme.
+
 # Business Jekyll Theme
 
 Business Jekyll Theme is a theme that is designed to be used for small and medium business. It is designed by a team from [Technext](https://github.com/technext/). The theme is then ported over by [Melvin Ch'ng](http://melvinchng.github.io) for Jekyll support. The original source code can be obainted from Technext's [repository](https://github.com/technext/office)
