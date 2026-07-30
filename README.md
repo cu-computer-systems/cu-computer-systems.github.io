@@ -1,4 +1,4 @@
-# CU Computer Systems Website
+# CU Computer Systems Lab Website
 
 Source for the Computer Systems Research Lab site at the University of Colorado Boulder — **[systems.cs.colorado.edu](https://systems.cs.colorado.edu)**.
 
@@ -30,17 +30,16 @@ Nearly all content lives in the YAML files under `_data/` — you rarely need to
 Edit `_data/faculty.yml`. Entries are sorted alphabetically by last name:
 
 ```yaml
-- name: Joshua Viszlai
+- name: Joshua Viszlai (Joining Aug 2027)
   image_url: /assets/img/faculty/jviszlai.png
-  note: |
-    Visiting Assistant Professor
-    Joining CU Boulder in August 2027
   areas:
     - Quantum Computing
   website: https://jviszlai.github.io/
 ```
 
-Put the photo in `assets/img/faculty/`. Only `name` is required; `image_url`, `note`, `areas`, and `website` are all optional. Without `image_url` the card falls back to `assets/img/faculty/default.jpg`. `note` is an optional block of small grey text under the name — use it for things like incoming appointments or leave status.
+Put the photo in `assets/img/faculty/`. Only `name` is required; `image_url`, `areas`, and `website` are optional. Without `image_url` the card falls back to `assets/img/faculty/default.jpg`.
+
+Appointment status goes in the `name` field as a parenthetical — `(Prof. Emeritus)`, `(On-Leave)`, `(Joining Aug 2027)`. The card has no separate field for titles or affiliations, and keeping every card to the same shape (photo, name, website, areas) is deliberate.
 
 **`areas` values must exactly match a `title:` in `_data/researchAreas.yml`.** That string match is what places someone under a research area in the Research Areas section. Anything that does not match still shows on the person's card but groups them nowhere. (The `tags:` field in `researchAreas.yml` is not used by any template.)
 
