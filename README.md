@@ -1,45 +1,129 @@
 # CU Computer Systems Website
 
+Source for the Computer Systems Research Lab site at the University of Colorado Boulder — **[systems.cs.colorado.edu](https://systems.cs.colorado.edu)**.
+
+Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
+
 ## Updating the Site
 
 To request an update to any page on this site, contact **Yueqi Chen** ([yueqi.chen@colorado.edu](mailto:yueqi.chen@colorado.edu)).
 
----
+If you have write access and want to make the change yourself, see [Making Changes](#making-changes) below.
 
-The sections below document the underlying Jekyll theme.
+## How the Site Is Built
 
-# Business Jekyll Theme
+The live site is a **single page** — `index.html` — with four anchor sections:
 
-Business Jekyll Theme is a theme that is designed to be used for small and medium business. It is designed by a team from [Technext](https://github.com/technext/). The theme is then ported over by [Melvin Ch'ng](http://melvinchng.github.io) for Jekyll support. The original source code can be obainted from Technext's [repository](https://github.com/technext/office)
+| Section | Anchor | Content comes from |
+| --- | --- | --- |
+| About | `#about` | Text written directly in `index.html` |
+| Faculty | `#faculty` | `_data/faculty.yml` |
+| Research Areas | `#research-areas` | `_data/researchAreas.yml`, rendered by `_includes/area.html` |
+| Gallery | `#gallery` | `_data/gallery.yml` |
 
-Unlike most Jekyll Themes, Business Jekyll Theme is not meant to be a single page theme. This theme is a package that you can use for your business website or promote certain project. I reorganized all the files and make it Jekyll friendly.
+Nearly all content lives in the YAML files under `_data/` — you rarely need to touch HTML.
 
-Big thanks to the creator of Office as this theme would not be possible without their hard work! You are always welcome to contribute to this repository to make it better!
+## Making Changes
 
-**Example Site**
-- [Business Jekyll Theme](https://business-jekyll-theme.github.io)
+### Add or edit a faculty member
 
-**Example Site From The Original Creator**
-- [Office Template](http://demo.themewagon.com/preview/office-responsive-multipage-bootstrap-template)
+Edit `_data/faculty.yml`. Entries are sorted alphabetically by last name:
 
-## Feature
-- Responsive layout
-- CSS Framework - Bootstrap 3
-- Beautiful icons by Fontawesome
-- Clean, simple and elegant
-- Multi page Template
-- Well commented and structured coding
-- Easy to use
-- It's Free!
+```yaml
+- name: Yueqi Chen
+  image_url: /assets/img/faculty/yueqi-chen.jpeg
+  areas:
+    - Anticensorship and Software Security
+    - Quantum Computing
+  website: http://cusecurity.cs.colorado.edu/yueqichen/
+```
 
-## Note
-I removed certain features from the original theme packages as we do not really need it. I modified the original source code slightly to make it more mobile friendly and reusable. 
+Put the photo in `assets/img/faculty/`. Each string under `areas` must match a `tags` entry in `_data/researchAreas.yml` — that is how people get grouped under a research area on the page.
 
-## Installation
-1. For first time user, you have to install Ruby and Rails. If you do not have Ruby on Rails installed, you may follow [this tutorial](http://melvinchng.github.io/rails/RubyOnRailsInstallation.html) that I wrote for Windows, Linux, and MacOS (installation videos are included).
-2. Install Jekyll by using the command `gem install jekyll`.
-3. Start your localhost server by using the command `jekyll serve`. Make sure that you are at the root directory of your folder before using this command.
-4. Your site should be accessible at `localhost:4000`.
-5. For additional information about Jekyll, refer to the [official website](http://jekyllrb.com/). 
+### Edit a research area
 
-## Enjoy!
+Edit `_data/researchAreas.yml`:
+
+```yaml
+- title: Networking, Wireless & Mobile Systems
+  caption: Networking, Wireless & Mobile Systems
+  tags:
+    - Networks
+    - Wireless
+  description: |
+    - Markdown bullet points describing the area.
+```
+
+`tags` is the list of labels that match the `areas:` values in `_data/faculty.yml`.
+
+### Add gallery photos
+
+Put the images in `assets/img/gallery/`, then add an entry to `_data/gallery.yml`:
+
+```yaml
+- title: Retirement BBQ
+  description: The lab gave a retirement party with barbeque.
+  image_url:
+  - /assets/img/gallery/bbq-2.jpg
+  - /assets/img/gallery/bbq-7.jpg
+```
+
+### Edit the About text or the banner
+
+The About copy is plain HTML in `index.html`. The banner image is `assets/img/banner.jpg`.
+
+### Site-wide settings
+
+`_config.yml` holds the site title, description, URL, and department address. Jekyll does **not** reload this file automatically — restart the local server after editing it.
+
+## Local Preview
+
+Requires Ruby 3.1+ and Bundler.
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+The site is then at <http://localhost:4000>.
+
+If you would rather not install Ruby, you can use Docker:
+
+```bash
+docker run --rm -it -v "$PWD":/app -w /app -p 4000:4000 ruby:3.3 \
+  bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
+```
+
+## Deployment
+
+Pushing to **`master`** publishes the site — GitHub Pages rebuilds it automatically, usually within a minute or two. There is no separate deploy branch and no GitHub Actions workflow.
+
+Because the build uses GitHub's own server-side Jekyll toolchain, the committed `Gemfile.lock` does **not** affect the published site. It only pins versions for local previews and is what Dependabot scans, so it is still worth keeping current:
+
+```bash
+bundle lock --update
+```
+
+The custom domain is set by the `CNAME` file (`systems.cs.colorado.edu`).
+
+## Repository Layout
+
+```
+index.html            The live site (single page)
+_config.yml           Jekyll and site settings
+_data/                Site content — faculty, research areas, gallery
+_includes/            Reusable template fragments
+_layouts/             Page templates
+assets/               CSS, JS, images
+CNAME                 Custom domain
+```
+
+### Legacy files
+
+The repo still carries material from an earlier multi-page version of the site: `about.html`, `blog.html`, `contact.html`, `projects.html`, `team.html`, the `people/` directory, and everything under `collections/`. **None of it is linked from the live site.** Some of those pages also render empty, because the collections they loop over (`site.alumni`, `site.postdocs`, `site.projects`) are not declared in `_config.yml`.
+
+Treat these as inactive. If you want one of them back, it needs to be wired up in `_config.yml` and linked from `index.html` — editing the file alone will not make it appear.
+
+## Credits
+
+The design is based on the [Business Jekyll Theme](https://business-jekyll-theme.github.io) by [Melvin Ch'ng](http://melvinchng.github.io), itself a Jekyll port of the [Office](https://github.com/technext/office) template by [Technext](https://github.com/technext/).
