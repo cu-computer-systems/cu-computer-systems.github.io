@@ -2,9 +2,6 @@
 
 Source for the Computer Systems Research Lab site at the University of Colorado Boulder — **[systems.cs.colorado.edu](https://systems.cs.colorado.edu)**.
 
-Built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
-
-## Updating the Site
 
 To request an update to any page on this site, contact **Yueqi Chen** ([yueqi.chen@colorado.edu](mailto:yueqi.chen@colorado.edu)).
 
